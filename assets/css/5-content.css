@@ -354,6 +354,55 @@
   border-radius: var(--radius-card);
 }
 
+.pattern-table-wrap {
+  overflow-x: auto;
+}
+
+.pattern-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 560px;
+  background: var(--surface-container);
+  border-radius: var(--radius-card);
+  box-shadow: var(--elevation-1);
+  overflow: hidden;
+}
+
+.pattern-table caption {
+  text-align: left;
+  font-weight: 600;
+  padding: var(--spacing-0-75);
+  background: var(--surface-container-highest);
+}
+
+.pattern-table th,
+.pattern-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid rgba(103, 80, 164, 0.1);
+}
+
+.pattern-table thead th {
+  font-size: 0.95rem;
+  color: var(--secondary-text);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.pattern-table tbody tr:last-child th,
+.pattern-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.pattern-table tbody th {
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+.pattern-table tbody td {
+  color: var(--secondary-text);
+}
+
 .pattern-card__icon {
   width: 48px;
   height: 48px;
@@ -381,6 +430,52 @@
   color: var(--secondary-text);
   font-size: 0.85rem;
   font-weight: 500;
+}
+
+.faq-list {
+  display: grid;
+  gap: var(--spacing-0-75);
+}
+
+.faq-item {
+  background: var(--surface-container);
+  border-radius: var(--radius-card);
+  box-shadow: var(--elevation-1);
+  padding: var(--spacing-0-75);
+}
+
+.faq-item[open] {
+  box-shadow: var(--elevation-2);
+}
+
+.faq-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "expand_more";
+  font-family: "Material Icons";
+  font-size: 20px;
+  transition: transform var(--transition-base);
+  color: var(--primary-color);
+}
+
+.faq-item[open] summary::after {
+  transform: rotate(180deg);
+}
+
+.faq-item p {
+  margin: 12px 0 0;
+  color: var(--secondary-text);
 }
 
 /* Resources */
