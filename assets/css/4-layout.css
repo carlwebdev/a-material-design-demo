@@ -1,0 +1,146 @@
+/* CSS Document - MACRO LAYOUT */
+
+
+
+	
+/*
+ * CODE FOR RESPONSIVE STICKY FOOTER
+ * Instructions: class "block" to footer
+ */
+html, body {
+	/* height: 100%; */ /* CASI QUE DEBERIA ESTAR EN EL CSS RESET TB, POR SI ACASO, BUT NOT SURE */
+	}
+#page { /* + .stickyParent */
+	/*
+	display: table;
+	height: 100%;
+	width:100%;
+	*//* VIP for responsiveness */
+	}
+.stickyFooter { /* stickyFooter, WAS ".block" */
+	/*
+	display: table-row;
+	height: 1px;
+	*/
+	}
+	
+	
+
+	
+body {
+	/* background-color:#B0BEC5; */
+	/* CAN BE IN EITHER OR */
+	/*
+	display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+	*/
+}	
+	
+	#page {
+		/* background-color:#B0BEC5; */
+		display: flex;
+		min-height: 100vh;
+		flex-direction: column;
+	}	
+	
+	
+/* CENTERED CONTENT */	
+.frame {
+	margin: 0 auto; /* HACER ALGO CON FLEX ........... */
+	/* max-width: 1200px; */
+	max-width: 1440px;
+	min-width: 320px;
+	padding: 0px var(--spacing-1);
+	/* padding: 0px var(--spacing-2); */
+	}
+	
+	
+	
+/* 
+ * HEADER
+ */			
+header { /* MAIN */
+	background-color: var(--primary-color);
+	color: var(--text-icons);
+	padding: var(--spacing-0-75) 0px; 
+	}
+	header .inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		}
+		.headerMain {
+			font-weight: bold; /* NOW IS NCE ! TIGHT ! */
+			/* font-size: 24px; */
+			/* font-size: var(--fs-2); */
+			font-size: var(--fs-1-5);
+			font-family: var(--secondary-font), sans-serif;
+		}
+		.headerAside {
+			
+		}
+
+	
+
+
+.navicon {
+  
+  
+}
+.navicon span {font-size: 3em;}
+
+	
+
+	
+	
+@media only screen and (max-width: 568px) {
+	
+	header .inner {
+		flex-direction: column;
+		/* justify-content: flex-start; */ /* a reset test  */
+		align-items: flex-start;
+		gap: 9px; /* HALF OF the padding */ /* REQUIRES POLIFILL !!! */
+		}
+	
+}	/* MEDIA QUERY */  
+	
+	
+/* 
+ * CONTENT
+ */	
+.w_content { /* PROBABLY RENAME THSI , AS l_at least */ /* WAS w_content - OR RENAME AS MAIN, ETC */
+	flex: 1; /* VIP FOR "STICKY FOOTER - SOLVED BY FLEXBOX" IT OCCUPIES ALL THE AVAILABLE SPACE, WHILE SHOWING TEH HEADER & FOOTER */
+	/* border: 3px solid red;  */
+	padding: 48px 0px; /* TEMP */
+	}	
+	
+	
+/* 
+ * FOOTER
+ */		
+footer { /* MAIN */
+	background-color: var(--primary-color);
+	color: var(--text-icons);
+	text-align: center;
+	}
+	footer .inner {
+		padding: var(--spacing-0-75) 0px; 
+		display: flex;
+		justify-content: flex-end;		
+		}	
+		
+	
+	
+	
+@media only screen and (max-width: 568px) {
+	
+	footer .inner {
+		justify-content: flex-start;
+		}
+	
+}	/* MEDIA QUERY */  
+	
+	
+
+		

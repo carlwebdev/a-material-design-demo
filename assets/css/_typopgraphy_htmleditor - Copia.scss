@@ -1,0 +1,179 @@
+/*
+ * CSS
+ * File: TYPOGRAPHY - HTML-EDITOR
+ */	
+	
+
+.m_htmleditor { /* REALMENTE SERIA S_ DE STYLE  */
+	
+    h1 {
+				color: $c_blue;
+        font-size: 32px;
+        margin-top: $spacing;
+        margin-bottom: $spacing;
+        }
+						
+    h2 { // tb se usa en legalpages !!!
+        font-size: 28px;
+        margin-top: $spacing;
+        margin-bottom: $spacing075;
+        }
+							
+    h3 {
+        font-size: 24px;
+        // color: #f00;
+        margin-top:24px;
+        // margin-bottom:12px;
+				margin-bottom:6px;
+				margin-bottom: $spacing05;
+        // color: $c_blue;
+        }
+    
+    h4 {
+        font-size: 20px;
+        margin-top:24px;
+        margin-bottom:36px;
+				margin-bottom: $spacing05;
+        }
+				
+    h5 {
+        font-size: 18px;
+        margin-top:24px;
+        margin-bottom: $spacing025;
+        }
+				
+    h6 {
+        font-size: 16px;
+        margin-top:24px;
+        margin-bottom: $spacing025;
+        }
+			
+		
+		
+    p {
+			margin-bottom: 12px;
+			// padding-bottom: 12px; // LAST OF TYPE...
+			}
+    
+		
+		
+    a {
+			// color: $c_black_grey; // test 
+			
+			
+			
+			font-weight: bold; // HMMMMMMM - here we sgould apply the base font bold version, ...
+			
+			
+			
+			&:hover {text-decoration: underline;}
+			} // a
+    
+    
+
+		
+		/*
+		 * LISTS
+		 */
+    ul {
+			// margin-left:24px;
+			// margin-left:16px; // to verticalalign with title ui monthly hightlights
+			margin-left:24px; // to verticalalign with title ui monthly hightlights
+			// THIS SHOULD BE A VARIABLE
+			
+			// margin-bottom: 12px;
+			margin-bottom: 24px;
+			// list-style:  disc; / NOW IM CUSTOMIZING
+			// list-style-image: url('../assets/img/bullet_blue.jpg'); /* deberia ser un gif */
+			}
+			
+	
+			li {
+				margin-bottom: 12px;
+				
+				position: relative;
+				&::before {
+					// content: '&deg;'; // poner el dot,m con font size etc 
+					// content: '&#176'; // poner el dot,m con font size etc 
+					// content: '&#8226'; // poner el dot,m con font size etc 
+					// content: '\U+2022'; // poner el dot,m con font size etc 
+					content: '•'; // poner el dot,m con font size etc 
+					position: absolute; 
+					left: -24px; // THIS SHOULD BE A VARIABLE
+					color: $c_text_blue; // COLOR DEL DOT, BLUE, RED, ETC ... 
+					font-size: 24px; // TEST 
+					line-height: 0.9em;
+					// background-color: grey;
+					// border-radius: 50%;
+					} // before 
+				
+				} // li 
+			
+	
+				li ul {
+					// margin-top: 10px;
+					margin-top: 12px;
+					margin-bottom: 12px;
+					}  	
+	
+	
+	
+		/*
+		 * MEDIA INSERTADO EN EL HTMLEDITOR
+		 */
+	
+		img {
+			// @include img; // QUITADO, POR EL LOGO DE TARJETAS DE PAYPAL EN EL CHECKOUT PAGE DEL WOOCOMMERCE
+			// @include marginv($spacing);	
+			
+			
+			@include marginv($spacing2);				
+			}	
+		
+		iframe { // TARGET IT WITH FITVIDS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+			width: 100%;
+			// @include marginv($spacing);
+			
+			@include marginv($spacing2);	
+			}
+	
+	
+	
+	
+    } // m_htmleditor
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.m_link { // solo usado en email_enviado
+ 	margin-top: $spacing; // TEST
+	
+	// font-size: 36px;
+	// text-align: center;
+
+	a {
+		// display: inline-block;
+		// display: block;
+		display: inline-block; // para que no sea fullwidth !!!
+		// @extend .buttonMain;
+	} // a
+
+	
+	// centrar el boton
+	@media only screen and (max-width: $bp_s) {
+		text-align: center;		
+		} // MEDIA-QUERY	
+	
+} // link
+	
+	

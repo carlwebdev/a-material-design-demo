@@ -1,0 +1,81 @@
+/*
+ * CSS RESET
+ */
+
+/* 
+ * 1 - REMOVE MARGIN AROUND THE PAGE 
+ * BODY MARGIN 0 IS THE KEY 
+ */
+html, body {
+	margin: 0;
+	padding: 0;
+	}
+
+/* 
+ * 2 - BOX MODEL
+ * Universal Box Sizing - https://css-tricks.com/box-sizing/ 
+ */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+
+
+
+/* html, body, */
+
+/* div, span, */ /* ???? */ 
+/* h1, h2, h3, h4, h5, h6, */
+/* p,  */
+/* pre, code, */ /* smp, smp , sample ... */
+img,
+dl, dt, dd,  /* WHAT WAS THIS FOR ?!??!! */
+ol, ul, li,
+img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size:100%; /* for headings, works */ /* maybe all of this is to much, really */
+	}
+
+/*
+css reset ideas 
+https://stackoverflow.com/questions/7049952/what-are-the-default-margins-for-the-html-heading-tags-h1-h2-h3-etc
+
+THE SSPCS INFO IS HERE
+SAME LIJK...
+https://stackoverflow.com/questions/7049952/what-are-the-default-margins-for-the-html-heading-tags-h1-h2-h3-etc
+
+*/
+
+
+
+/* P DEAGULT IS MARGIN VERTCIAL 16PX, SO THEY SOLAPARSE AND DONT ADD UP IF 2 P'S SEHGUIDOS..
+*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-size:100%; /* for headings, works */ 
+	/* font-weight: normal; */ /* aka 400 , vs el bold default-ish */ 
+	font-weight: 400; /* aka 400 , vs el bold default-ish */ 
+	
+	/* margin: 0; */ /* OK, but might not be really relevant, unless I redo it after thsi reset ... */
+	/* padding: 0; */ 
+	
+	}
+
+
+
+
+ol, ul {list-style:none;}
+
+img {
+	max-width:100%; 
+	height:auto; /* The height is added to ensure the aspect ratio of the image is retained. */
+	} 
+
+/* img, iframe, video {display: block;} */
+
+
+
