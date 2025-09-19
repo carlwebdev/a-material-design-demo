@@ -4,30 +4,30 @@
 
 :root {
   /* Material 3 inspired color roles */
-  --dark-primary-color: #4f378b;
-  --light-primary-color: #eaddff;
-  --primary-color: #6750a4;
+  --dark-primary-color: #0b3d91;
+  --light-primary-color: #dbe8ff;
+  --primary-color: #1a73e8;
   --on-primary-color: #ffffff;
-  --primary-container: #eaddff;
-  --on-primary-container: #21005d;
-  --secondary-color: #625b71;
+  --primary-container: #d6e4ff;
+  --on-primary-container: #012a63;
+  --secondary-color: #f97316;
   --on-secondary-color: #ffffff;
-  --secondary-container: #e8def8;
-  --on-secondary-container: #1d192b;
-  --accent-color: #7d5260;
-  --tertiary-container: #ffd8e4;
-  --on-tertiary-container: #31111d;
-  --surface-color: #fef7ff;
-  --surface-container-low: #f9f1ff;
+  --secondary-container: #ffe1d0;
+  --on-secondary-container: #2f1500;
+  --accent-color: #00b894;
+  --tertiary-container: #c8fff0;
+  --on-tertiary-container: #00382c;
+  --surface-color: #f8fbff;
+  --surface-container-low: #f1f5ff;
   --surface-container: #ffffff;
-  --surface-container-high: #f6edff;
-  --surface-variant: #e7def4;
-  --primary-text: #1c1b1f;
-  --secondary-text: #49454f;
-  --outline-color: #7a7289;
-  --outline-variant: #cac4d0;
-  --shadow-color: 21 26 39;
-  --scrim: rgba(17, 16, 28, 0.45);
+  --surface-container-high: #e6eefc;
+  --surface-variant: #d9e2f2;
+  --primary-text: #111827;
+  --secondary-text: #475569;
+  --outline-color: #94a3b8;
+  --outline-variant: #cbd5f5;
+  --shadow-color: 13 20 33;
+  --scrim: rgba(9, 17, 31, 0.45);
 
   /* Typography */
   --primary-font: 'Roboto';
