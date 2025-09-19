@@ -1,146 +1,178 @@
-/* CSS Document - MACRO LAYOUT */
+/* CSS Document - Layout */
 
-
-
-	
-/*
- * CODE FOR RESPONSIVE STICKY FOOTER
- * Instructions: class "block" to footer
- */
-html, body {
-	/* height: 100%; */ /* CASI QUE DEBERIA ESTAR EN EL CSS RESET TB, POR SI ACASO, BUT NOT SURE */
-	}
-#page { /* + .stickyParent */
-	/*
-	display: table;
-	height: 100%;
-	width:100%;
-	*//* VIP for responsiveness */
-	}
-.stickyFooter { /* stickyFooter, WAS ".block" */
-	/*
-	display: table-row;
-	height: 1px;
-	*/
-	}
-	
-	
-
-	
+html,
 body {
-	/* background-color:#B0BEC5; */
-	/* CAN BE IN EITHER OR */
-	/*
-	display: flex;
+  min-height: 100%;
+}
+
+#page {
+  display: flex;
   min-height: 100vh;
   flex-direction: column;
-	*/
-}	
-	
-	#page {
-		/* background-color:#B0BEC5; */
-		display: flex;
-		min-height: 100vh;
-		flex-direction: column;
-	}	
-	
-	
-/* CENTERED CONTENT */	
+  background: radial-gradient(circle at 0% 0%, rgba(114, 87, 186, 0.08), transparent 55%),
+              radial-gradient(circle at 100% 15%, rgba(255, 216, 228, 0.18), transparent 45%),
+              var(--surface-color);
+}
+
 .frame {
-	margin: 0 auto; /* HACER ALGO CON FLEX ........... */
-	/* max-width: 1200px; */
-	max-width: 1440px;
-	min-width: 320px;
-	padding: 0px var(--spacing-1);
-	/* padding: 0px var(--spacing-2); */
-	}
-	
-	
-	
-/* 
- * HEADER
- */			
-header { /* MAIN */
-	background-color: var(--primary-color);
-	color: var(--text-icons);
-	padding: var(--spacing-0-75) 0px; 
-	}
-	header .inner {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		}
-		.headerMain {
-			font-weight: bold; /* NOW IS NCE ! TIGHT ! */
-			/* font-size: 24px; */
-			/* font-size: var(--fs-2); */
-			font-size: var(--fs-1-5);
-			font-family: var(--secondary-font), sans-serif;
-		}
-		.headerAside {
-			
-		}
+  margin: 0 auto;
+  max-width: 1200px;
+  min-width: 320px;
+  width: 100%;
+  padding: 0 var(--spacing-2);
+}
 
-	
+header {
+  background: linear-gradient(135deg, rgba(103, 80, 164, 0.92), rgba(140, 103, 217, 0.92));
+  color: var(--on-primary-color);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: var(--elevation-1);
+  backdrop-filter: blur(18px);
+}
 
+header .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-1);
+  padding: var(--spacing-0-75) 0;
+  position: relative;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-0-5);
+}
+
+.brand__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 24px;
+}
+
+.headerMain {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.headerAside {
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+.primary-nav ul {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-0-5);
+  margin: 0;
+  padding: 0;
+}
+
+.primary-nav a {
+  padding: 10px 18px;
+  border-radius: var(--radius-chip);
+  color: var(--on-primary-color);
+  font-weight: 500;
+  transition: background var(--transition-base), color var(--transition-base);
+}
+
+.primary-nav a:hover,
+.primary-nav a:focus {
+  background: rgba(255, 255, 255, 0.16);
+  text-decoration: none;
+}
+
+.primary-nav.is-open {
+  display: flex;
+}
 
 .navicon {
-  
-  
+  display: none;
+  color: var(--on-primary-color);
 }
-.navicon span {font-size: 3em;}
 
-	
+.w_content {
+  flex: 1;
+  padding: var(--spacing-3) 0 var(--spacing-4);
+}
 
-	
-	
+main .frame {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+footer {
+  background: var(--surface-container);
+  color: var(--secondary-text, #49454f);
+  border-top: 1px solid var(--outline-variant);
+  box-shadow: var(--elevation-0);
+}
+
+footer .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-0-5);
+  padding: var(--spacing-0-75) 0;
+}
+
+.footer-link {
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 960px) {
+  .frame {
+    padding: 0 var(--spacing-1);
+  }
+
+  header .inner {
+    gap: var(--spacing-0-5);
+  }
+
+  .primary-nav {
+    display: none;
+  }
+
+  .primary-nav.is-open {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: calc(100% + 12px);
+    background: rgba(24, 15, 47, 0.92);
+    padding: 16px;
+    border-radius: 18px;
+    box-shadow: var(--elevation-2);
+    backdrop-filter: blur(16px);
+  }
+
+  .primary-nav.is-open ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .primary-nav.is-open a {
+    display: block;
+    width: 100%;
+  }
+
+  .navicon {
+    display: inline-flex;
+  }
+}
+
 @media only screen and (max-width: 568px) {
-	
-	header .inner {
-		flex-direction: column;
-		/* justify-content: flex-start; */ /* a reset test  */
-		align-items: flex-start;
-		gap: 9px; /* HALF OF the padding */ /* REQUIRES POLIFILL !!! */
-		}
-	
-}	/* MEDIA QUERY */  
-	
-	
-/* 
- * CONTENT
- */	
-.w_content { /* PROBABLY RENAME THSI , AS l_at least */ /* WAS w_content - OR RENAME AS MAIN, ETC */
-	flex: 1; /* VIP FOR "STICKY FOOTER - SOLVED BY FLEXBOX" IT OCCUPIES ALL THE AVAILABLE SPACE, WHILE SHOWING TEH HEADER & FOOTER */
-	/* border: 3px solid red;  */
-	padding: 48px 0px; /* TEMP */
-	}	
-	
-	
-/* 
- * FOOTER
- */		
-footer { /* MAIN */
-	background-color: var(--primary-color);
-	color: var(--text-icons);
-	text-align: center;
-	}
-	footer .inner {
-		padding: var(--spacing-0-75) 0px; 
-		display: flex;
-		justify-content: flex-end;		
-		}	
-		
-	
-	
-	
-@media only screen and (max-width: 568px) {
-	
-	footer .inner {
-		justify-content: flex-start;
-		}
-	
-}	/* MEDIA QUERY */  
-	
-	
-
-		
+  footer .inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

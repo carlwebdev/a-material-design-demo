@@ -1,244 +1,75 @@
-/* 
- * TYPOGRAPHY - HTMLEDITOR 
+/*
+ * TYPOGRAPHY SCALE & UI TEXT
  */
 
+h1,
+.h1 {
+  font-size: clamp(2.5rem, 4vw, 3.25rem);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.1;
+  margin: 0 0 var(--spacing-0-5);
+}
 
-/* 
-get that header geerantor de tiwtter,pero tb el de mareiakl deisgfn font ssystem, sicohgelo de ahi 
+h2,
+.h2 {
+  font-size: clamp(2rem, 3.2vw, 2.5rem);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  margin: 0 0 var(--spacing-0-5);
+}
 
-https://material.io/design/typography/the-type-system.html#type-scale
+h3,
+.h3 {
+  font-size: clamp(1.5rem, 2.8vw, 2rem);
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0 0 var(--spacing-0-5);
+}
 
-*/
+h4,
+.h4 {
+  font-size: clamp(1.25rem, 2.2vw, 1.5rem);
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0 0 var(--spacing-0-5);
+}
 
-.m_htmleditor { /* REALMENTE SERIA S_ DE STYLE  */
-	
-} /* m_htmleditor */
+p,
+.section__subtitle {
+  margin: 0 0 var(--spacing-0-5);
+  color: var(--secondary-text, #49454f);
+  font-size: 1rem;
+}
 
+small,
+.caption {
+  font-size: var(--fs-0-875);
+  letter-spacing: 0.02em;
+  color: var(--outline-color);
+}
 
-/*
-https://material.io/design/typography/the-type-system.html#type-scale
-*/
-
-    .m_htmleditor h1 {
-			font-weight: 300; /* LIGHT - BUT NOT REALLY ADDED THROUGH THE CDN !!! I THINK ... */			
-			font-size: 96px;
-			letter-spacing: -1.5px;
-			/* REM ETC */
-			
-			
-			/*  color: var(--dark-primary-color);*/
-			/*
-			margin-top: $spacing;
-       margin-bottom: $spacing;
-			*/
-    }
-						
-    .m_htmleditor h2 { /*tb se usa en legalpages !!! */
-			font-weight: 300; /* LIGHT - BUT NOT REALLY ADDED THROUGH THE CDN !!! I THINK ... */
-			font-size: 60px;
-			letter-spacing: -0.5px;
-
-			/*
-			margin-top: $spacing;
-			margin-bottom: $spacing075;
-			*/
-    }
-						
-
-
-
-    .m_htmleditor h3 {
-        /* margin-top:24px; */
-        /* margin-bottom:12px; */
-				/* margin-bottom:6px; */
-				/* margin-bottom: $spacing05; */
-			
-			
-			font-size: 48px;
-			font-weight: 400;  /* NORMAL, AKA REGULRA, BUT WHY .. JUST CAUSE, FOR THE RESET IS NOT DOOUING IT !!!  */
-			
-			/* so maybe ad dit to the reset, for other situations, makes sense 
-			did, but th happened ... 
-			*/
-       }
-    
-    .m_htmleditor h4 {
-			font-weight: 400;	
-			font-size: 34px;
-			letter-spacing: 0.25px;		
-			/*
-			margin-top:24px;
-			margin-bottom:36px;
-			*/
-			/* margin-bottom: $spacing05; */
-      }
-				
-    .m_htmleditor h5 {
-        /*
-			margin-top:24px;
-        margin-bottom: $spacing025;
-			*/
-			font-size: 24px;
-			font-weight: 400;
-    }
-				
-    .m_htmleditor h6 {
-        /*
-			margin-top:24px;
-        margin-bottom: $spacing025;
-			*/
-			font-weight: 500; /* MEDIUM */
-			font-size: 16px;
-			letter-spacing: 0.5px;		
-			
-     }
-		
-/* que toda oestso sean mixins del materail desig type scale (system) */
-
-
-/*
-
-Subtitle 1
-Subtitle 2
-
-Body 1
-Body 2
-
-Button (uppercase)
-Caption
-Overline (uppercase)
-
-
-*/
-
-
-    .m_htmleditor .aka_button  {
-        /* font-size: 16px; */
-        /*
-			margin-top:24px;
-        margin-bottom: $spacing025;
-			*/
-			font-weight: 500; /* MEDIUM */
-			font-size: 14px;
-			letter-spacing: 1.25px;		
-			/* TEXT TRANSOMR UPPERCASE */
-        }
-
-
-
+strong {
+  font-weight: 600;
+}
 
 button {
-	
-	/* FOR RESET FILE */
-	/* border-radius: 0px; */ /* ALSO DO FOR IOS ETC */
-	/* this cause sglitcthy border color thingee */
-	
-	border: 0;  /* OK - THIS TAKES CARE OF THE BORDER ASPECT & RADIUS */
-	/*outline: 0;*/ /* DOES NOTHING */
+  font-family: var(--primary-font), sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+  text-transform: none;
+}
 
-	padding: 0; /* OK */
-	/* margin: 0; */ 
-
-	background: none; /* OK, TO DELETE BG COLOR */ 
-	
-	
-	/* default is deisplay inline ((block)), so there is a spaceing */
-	/* display: block; */  /* ok, pero comentado por ahor aY LUEGO GETSINAR DESDE PARENT CON FLEX */
-	
-	
-	
-	
-	/* font reset */
-	
-	font-family: 'Roboto'; 
-	
-	
-	
-	/* HAS BG COLR & BORDER ON FICUS (CLICK) */
-	
-	font-weight: 500; /* MEDIUM - but looks a bit dirty wonky */
-	font-size: 14px;
-	letter-spacing: 1.25px;		
-	text-transform: uppercase;  /* PRECAUTION */
-	
-	
-	
-	height: 36px; /* THE TEXT IS VERTICALLLY VENTERED FOR SOME STRANGE REASON ... ??? */
-	/* border: 1px solid red; */
-} /* button */
-
-
-
-
-button.text-button {
-	color: var(--dark-primary-color);
-	color: var(--accent-color);
-	padding: 0px 12px;
-} /* button */
-
-
-
-button.outlined-button {
-	color: var(--dark-primary-color);
-	color: var(--accent-color);
-	padding: 0px 16px;
-	border-radius: 3px ; /* TEST */
-	border-radius: 6px ; /* TEST */
-	
-	border: 2px solid var(--divider-text);
-} /* button */
-
-
-
-
-button.contained-button-with-icon {
-	/* background-color: var(--dark-primary-color);*/
-	background-color: var(--accent-color);
-	color: var(--text-icons);
-	border-radius: 3px ; /* TEST */
-	border-radius: 6px ; /* TEST */
-} /* button */
-
-button.contained-button {
-	padding: 0px 16px;
-	
-	/* background-color: var(--dark-primary-color);*/
-	background-color: var(--accent-color);
-	color: var(--text-icons);
-	
-	border-radius: 3px ; /* TEST */
-	border-radius: 6px ; /* TEST */
-	
-	
-} /* button */
-
-
-
-
-
-
-		/* DO NOTHING, JUST KEEP THE DEFAUKLT BEHAVIOUR, LESS IS MORE */
-    .m_htmleditor p {
-			/* color: red;  */
-			/*
-			margin-bottom: 12px;
-			// padding-bottom: 12px; // LAST OF TYPE...
-			*/
-			}
-			.m_htmleditor p:last-of-type {
-				/*
-				margin-bottom: 12px;
-				// padding-bottom: 12px; // LAST OF TYPE...
-				*/
-				}
-	
-
-
-
-		/*
-		 * LISTS - coger el truco de EPIC mointhly upadtes trick , ams tobust
-		 */
-
-
-
-
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

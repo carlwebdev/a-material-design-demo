@@ -1,202 +1,344 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">	
-<meta name="viewport" content="width=device-width, initial-scale=1" />  
-<title>Fast Demo Template</title> 	
-<!--
-<meta name="description" content=""> 
-<meta name="keywords" content=""> 	
-<link rel="shortcut icon" href="favicon.ico" /> 
--->	
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
-<link rel="stylesheet" href="assets/global.css" />
-	
-	
-<!--https://materializecss.com/icons.html - Icon Font , ES EL MISMO QUE EL OFFICIAL, OSEA QUE GUT -->
-<!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
-	
-<!-- http://google.github.io/material-design-icons/ - HAS INSTRUCTIONS FOR WHEN SELF HOSTING THE FONT -->	
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	
-<!-- 
-HACER EL FAVICON ..... 
--->
-<!-- <link rel="shortcut icon" href="favicon.ico" /> -->	
-	
-<!--	
-DONE
-assets folder, with css, global, 
-
-PENDING
-img (empty for now, usin some pexels or whatver ... )			
-and the favicon folder stowed away, no favicon.ico in the root			
--->	
-	
-	<!--
-	BUT NO PHP YET, AS I WANT TO BE ABLE TO USE CTRL+E ... IF I CAN NOW ..? YES !!!!!!
-	-->
-	
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
+  <title>Material UI Trend Demo</title>
+  <meta name="description" content="A Material Design inspired UI trend demo showcasing elevated surfaces, cards, and interaction patterns." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/global.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 <div id="page">
-
-  
   <header>
     <div class="frame">
-			<div class="inner">
-				<div class="headerMain">FAST DEMO</div>
-				<div class="headerAside">Name of the demo</div>
-				
-        <div class="navicon">
-          <!-- FOR NAV -->
-          <span class="material-icons">menu</span>
-				</div>
-				
-			</div> <!-- /inner --> 
-    </div> <!-- /frame -->       
-  </header> 
-  
-  
-  
-  <div class="w_content">
+      <div class="inner">
+        <div class="brand">
+          <span class="brand__icon material-icons" aria-hidden="true">auto_awesome</span>
+          <div class="brand__copy">
+            <div class="headerMain">Material UI Trends</div>
+            <div class="headerAside">2024 Inspiration Deck</div>
+          </div>
+        </div>
+        <nav class="primary-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="#cards">Teams</a></li>
+            <li><a href="#patterns">Patterns</a></li>
+            <li><a href="#resources">Resources</a></li>
+          </ul>
+        </nav>
+        <button class="navicon md-button md-button--icon" type="button" aria-label="Open navigation" aria-expanded="false">
+          <span class="material-icons" aria-hidden="true">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="w_content">
     <div class="frame">
-       
-			
+      <section class="surface hero surface--primary" aria-labelledby="hero-title">
+        <div class="hero__badge">Material You</div>
+        <h1 id="hero-title">Material design UI trend demo</h1>
+        <p class="hero__lead">Explore expressive surfaces, user cards, and interaction patterns inspired by the latest Material Design guidance.</p>
+        <div class="hero__actions">
+          <button class="md-button md-button--filled" type="button">
+            <span class="material-icons" aria-hidden="true">rocket_launch</span>
+            Explore components
+          </button>
+          <button class="md-button md-button--tonal" type="button">
+            <span class="material-icons" aria-hidden="true">download</span>
+            Download kit
+          </button>
+        </div>
+        <ul class="hero__guides">
+          <li>
+            <span class="material-icons" aria-hidden="true">layers</span>
+            Layered surfaces with adaptive elevation
+          </li>
+          <li>
+            <span class="material-icons" aria-hidden="true">color_lens</span>
+            Dynamic color applied to avatar gradients
+          </li>
+          <li>
+            <span class="material-icons" aria-hidden="true">motion_photos_on</span>
+            Motion-ready components &amp; micro interactions
+          </li>
+        </ul>
+      </section>
 
-			
-			
-			<!--
-      Your code goes here...<br>
-			-->
-			
-			
-<!--
-			ANTES DE SALTAR AL 4, 5 - HACER LO DE LOS MATETRIAL ICONS 
--->      
-	
-<!--			
-			<br>	
-			
-			<br>
-<br>
-<br>
-mATERIAL ICONS - https://material.io/resources/icons/?style=baseline
-		<br>
-			(esto ya soporta tbsu propio icon font, usage en el lateral,learn to do the call...
-			
-			)
-			<br>
-<br>
+      <section class="chip-tray surface surface--raised" aria-labelledby="chip-title">
+        <h2 id="chip-title" class="visually-hidden">Focus areas</h2>
+        <div class="chip-set" role="list">
+          <button class="md-chip is-selected" type="button" role="listitem" aria-pressed="true">
+            <span class="material-icons" aria-hidden="true">explore</span>
+            Adaptive layouts
+          </button>
+          <button class="md-chip" type="button" role="listitem" aria-pressed="false">
+            <span class="material-icons" aria-hidden="true">animation</span>
+            Expressive motion
+          </button>
+          <button class="md-chip" type="button" role="listitem" aria-pressed="false">
+            <span class="material-icons" aria-hidden="true">gradient</span>
+            Color systems
+          </button>
+          <button class="md-chip" type="button" role="listitem" aria-pressed="false">
+            <span class="material-icons" aria-hidden="true">hearing</span>
+            Accessibility
+          </button>
+          <button class="md-chip" type="button" role="listitem" aria-pressed="false">
+            <span class="material-icons" aria-hidden="true">touch_app</span>
+            Micro-interactions
+          </button>
+        </div>
+      </section>
 
-			
-			
-			
-AND SEEK MATERIAL ICON FONT 			
-			
-	<br>			
-			
+      <section class="section" id="cards" aria-labelledby="cards-title">
+        <header class="section__header">
+          <div>
+            <h2 id="cards-title">Featured product teams</h2>
+            <p class="section__subtitle">User cards demonstrating elevated surfaces, typography hierarchy, and supportive color systems.</p>
+          </div>
+          <button class="md-button md-button--outlined" type="button">
+            <span class="material-icons" aria-hidden="true">add</span>
+            Add card
+          </button>
+        </header>
+        <div class="card-grid">
+          <article class="md-card">
+            <div class="md-card__header">
+              <div class="md-card__avatar avatar avatar--sunrise" aria-hidden="true">AJ</div>
+              <div class="md-card__titles">
+                <h3>Amelia Jones</h3>
+                <p class="md-card__subtitle">Lead Product Designer · Quartz</p>
+              </div>
+              <button class="md-button md-button--icon" type="button" aria-label="More options for Amelia Jones">
+                <span class="material-icons" aria-hidden="true">more_vert</span>
+              </button>
+            </div>
+            <div class="md-card__body">
+              <p>Crafts inclusive design systems that balance dynamic color with high legibility across adaptive layouts.</p>
+              <ul class="md-list">
+                <li>
+                  <span class="material-icons" aria-hidden="true">palette</span>
+                  Tonal palettes mapped to dynamic color tokens
+                </li>
+                <li>
+                  <span class="material-icons" aria-hidden="true">grid_view</span>
+                  Grid-based responsive scaffolds at 4dp increments
+                </li>
+                <li>
+                  <span class="material-icons" aria-hidden="true">tips_and_updates</span>
+                  Prototype-first approach with motion handoffs
+                </li>
+              </ul>
+            </div>
+            <div class="md-card__footer">
+              <button class="md-button md-button--text" type="button">View playbook</button>
+              <button class="md-button md-button--text" type="button">Share</button>
+            </div>
+          </article>
 
-			
-<i class="material-icons">add</i>
-<i class="large material-icons">add</i>
-<i class="large material-icons">insert_chart</i>
-<i class="material-icons">accessibility</i>		
-			
-			
-<br>
-<br>
-<br>
-<br>
+          <article class="md-card">
+            <div class="md-card__header">
+              <div class="md-card__avatar avatar avatar--lagoon" aria-hidden="true">KM</div>
+              <div class="md-card__titles">
+                <h3>Keon Malik</h3>
+                <p class="md-card__subtitle">Design Technologist · Nebula Labs</p>
+              </div>
+              <button class="md-button md-button--icon" type="button" aria-label="More options for Keon Malik">
+                <span class="material-icons" aria-hidden="true">more_vert</span>
+              </button>
+            </div>
+            <div class="md-card__body">
+              <p>Connects prototyping and production by building robust Material 3 component libraries.</p>
+              <ul class="md-list">
+                <li>
+                  <span class="material-icons" aria-hidden="true">layers_clear</span>
+                  Elevation tokens for restful and express states
+                </li>
+                <li>
+                  <span class="material-icons" aria-hidden="true">bolt</span>
+                  Motion specs synced with Android Compose
+                </li>
+                <li>
+                  <span class="material-icons" aria-hidden="true">code</span>
+                  Token-driven theming published to design ops
+                </li>
+              </ul>
+            </div>
+            <div class="md-card__footer">
+              <button class="md-button md-button--text" type="button">View prototype</button>
+              <button class="md-button md-button--text" type="button">Connect</button>
+            </div>
+          </article>
 
-<span class="material-icons">accessibility</span>	
+          <article class="md-card">
+            <div class="md-card__header">
+              <div class="md-card__avatar avatar avatar--dusk" aria-hidden="true">LS</div>
+              <div class="md-card__titles">
+                <h3>Linh Seo</h3>
+                <p class="md-card__subtitle">Research Lead · Haptic Studio</p>
+              </div>
+              <button class="md-button md-button--icon" type="button" aria-label="More options for Linh Seo">
+                <span class="material-icons" aria-hidden="true">more_vert</span>
+              </button>
+            </div>
+            <div class="md-card__body">
+              <p>Advocates for accessibility-forward journeys paired with gentle, high-contrast tonal ramps.</p>
+              <ul class="md-list">
+                <li>
+                  <span class="material-icons" aria-hidden="true">hearing</span>
+                  Focus states and motion alternatives for inclusivity
+                </li>
+                <li>
+                  <span class="material-icons" aria-hidden="true">insights</span>
+                  Research sprints evaluating adaptive surfaces
+                </li>
+                <li>
+                  <span class="material-icons" aria-hidden="true">emoji_objects</span>
+                  Insight decks shared via collaborative crits
+                </li>
+              </ul>
+            </div>
+            <div class="md-card__footer">
+              <button class="md-button md-button--text" type="button">View insights</button>
+              <button class="md-button md-button--text" type="button">Invite</button>
+            </div>
+          </article>
 
--->			
-			
+          <article class="md-card">
+            <div class="md-card__header">
+              <div class="md-card__avatar avatar avatar--citrus" aria-hidden="true">TR</div>
+              <div class="md-card__titles">
+                <h3>Tamara Ruiz</h3>
+                <p class="md-card__subtitle">Design Ops · Lumen Collective</p>
+              </div>
+              <button class="md-button md-button--icon" type="button" aria-label="More options for Tamara Ruiz">
+                <span class="material-icons" aria-hidden="true">more_vert</span>
+              </button>
+            </div>
+            <div class="md-card__body">
+              <p>Aligns product squads with shared Material guidelines, ensuring components scale with clarity.</p>
+              <ul class="md-list">
+                <li>
+                  <span class="material-icons" aria-hidden="true">dashboard_customize</span>
+                  Unified design tokens for multi-platform releases
+                </li>
+                <li>
+                  <span class="material-icons" aria-hidden="true">sync_alt</span>
+                  Rituals aligning weekly pattern audits
+                </li>
+                <li>
+                  <span class="material-icons" aria-hidden="true">emoji_events</span>
+                  Success metrics tied to usability benchmarks
+                </li>
+              </ul>
+            </div>
+            <div class="md-card__footer">
+              <button class="md-button md-button--text" type="button">View roadmap</button>
+              <button class="md-button md-button--text" type="button">Message</button>
+            </div>
+          </article>
+        </div>
+      </section>
 
-			
+      <section class="section" id="patterns" aria-labelledby="patterns-title">
+        <header class="section__header">
+          <div>
+            <h2 id="patterns-title">Interaction patterns</h2>
+            <p class="section__subtitle">Patterns translate Material Design foundations into ready-to-use experiences.</p>
+          </div>
+        </header>
+        <div class="pattern-grid">
+          <article class="pattern-card surface surface--raised">
+            <span class="pattern-card__icon material-icons" aria-hidden="true">view_carousel</span>
+            <h3>Layered cards</h3>
+            <p>Stagger elevation (1dp → 3dp) to guide focus while preserving consistent 24dp corner radii.</p>
+            <div class="pattern-card__meta">
+              <span class="meta-badge">Elevation 3dp</span>
+              <span class="meta-badge">Spacing 16dp</span>
+            </div>
+          </article>
 
-			
-			
+          <article class="pattern-card surface surface--raised">
+            <span class="pattern-card__icon material-icons" aria-hidden="true">view_day</span>
+            <h3>Split layouts</h3>
+            <p>Combine supportive tonal blocks with high-contrast typography for quick-scanning dashboards.</p>
+            <div class="pattern-card__meta">
+              <span class="meta-badge">Grid 12 col</span>
+              <span class="meta-badge">Breakpoint 768px</span>
+            </div>
+          </article>
 
-			
-			
-			
-			
+          <article class="pattern-card surface surface--raised">
+            <span class="pattern-card__icon material-icons" aria-hidden="true">timeline</span>
+            <h3>Motion handoffs</h3>
+            <p>Tokenize easing &amp; duration values so prototyping and development speak the same language.</p>
+            <div class="pattern-card__meta">
+              <span class="meta-badge">Ease 0.2/0</span>
+              <span class="meta-badge">Duration 250ms</span>
+            </div>
+          </article>
+        </div>
+      </section>
 
-			
-			<div class="m_htmleditor">
-				<!-- start slipsum code -->
+      <section class="section surface surface--primary" id="resources" aria-labelledby="resources-title">
+        <div class="section__header">
+          <div>
+            <h2 id="resources-title">Resources &amp; guidelines</h2>
+            <p class="section__subtitle">Accelerate your next sprint with curated Material Design references.</p>
+          </div>
+        </div>
+        <div class="resource-grid">
+          <article class="resource-card">
+            <h3>Component specs</h3>
+            <p>Download ready-to-build specs with density guidance, state tables, and accessibility notes.</p>
+            <button class="md-button md-button--text" type="button">Open library</button>
+          </article>
+          <article class="resource-card">
+            <h3>Motion blueprints</h3>
+            <p>Link micro-interactions to component states for prototypes that translate seamlessly to code.</p>
+            <button class="md-button md-button--text" type="button">View timeline</button>
+          </article>
+          <article class="resource-card">
+            <h3>Color foundations</h3>
+            <p>Mix tonal palettes and extract tokens that respond to wallpaper-driven dynamic color.</p>
+            <button class="md-button md-button--text" type="button">Generate palette</button>
+          </article>
+        </div>
+      </section>
 
-				<h1>I gotta piss</h1>
-				<p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>
-				<p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.</p>
-				
-				<h2>I can do that</h2>
-				<p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>				
-				<p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.</p>
-				
-				<h3>I can do that</h3>
-				<p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>				
-				<p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.</p>				
-				
-				<h4>I can do that</h4>
-				<p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>				
-				<p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.</p>
-				
-				<h5>I can do that</h5>
-				<p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>				
-				<p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.</p>
-				
-				<h6>I can do that</h6>
-				<p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>				
-				<p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.</p>
-				
-				<!-- end slipsum code -->
+      <section class="section trend-footnote">
+        <div class="surface surface--raised trend-footnote__content">
+          <h2>Design the future, one surface at a time</h2>
+          <p>Every component here celebrates Material Design&#8217;s evolving language&mdash;blend color, motion, and accessible structure to ship experiences users love.</p>
+          <div class="hero__actions">
+            <button class="md-button md-button--filled" type="button">
+              <span class="material-icons" aria-hidden="true">auto_awesome</span>
+              Start prototyping
+            </button>
+            <button class="md-button md-button--outlined" type="button">
+              <span class="material-icons" aria-hidden="true">groups</span>
+              Join the community
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
 
-				<!--
-				<button>Click me (reset the button behavior firts .. </button>
-				
-			<br>
-			<br>
-				-->
-				
-			<button class="text-button">Text Button</button>
-			<button class="outlined-button">Outlined button</button>
-			<button class="contained-button-with-icon">
-				<span class="material-icons">add</span>
-				Button
-			</button>
-			<button class="contained-button">Button</button>
-				
-			
-				
-			</div> <!-- /m_htmleditor -->	
-			
-			
-			
-    </div> <!-- /frame --> 
-  </div> <!-- /w_content -->
-  
-  
-  <footer class="stickyFooter"> <!--OJO QUE TIENE CONSECUENCIAS EN LAYOUT TESTINGS-->	
+  <footer class="stickyFooter">
     <div class="frame">
       <div class="inner">
-				
-				
-          <div>by Carl Johansson </div> 
-				
-					<!-- FOR SCOL TO TOP -->
-					<span class="material-icons">arrow_upward</span>
-				
-				
-				
-      </div>       
-    </div> <!-- /frame -->          
-  </footer>   
-
-</div> <!-- /page -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <div>Built as a Material Design trend showcase.</div>
+        <a href="https://material.io/design" target="_blank" rel="noreferrer" class="footer-link">Review the guidelines</a>
+      </div>
+    </div>
+  </footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>
