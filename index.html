@@ -11,62 +11,87 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-<div id="page">
-  <header>
-    <div class="frame">
-      <div class="inner">
-        <div class="brand">
-          <span class="brand__icon material-icons" aria-hidden="true">auto_awesome</span>
-          <div class="brand__copy">
-            <div class="headerMain">Material UI Trends</div>
-            <div class="headerAside">2024 Inspiration Deck</div>
+  <div id="page">
+    <header>
+      <div class="frame">
+        <div class="inner">
+          <div class="brand">
+            <span class="brand__icon material-icons" aria-hidden="true">auto_awesome</span>
+            <div class="brand__copy">
+              <div class="headerMain">Material UI Trends</div>
+              <div class="headerAside">2024 Inspiration Deck</div>
+            </div>
           </div>
+          <nav class="primary-nav" id="primary-navigation" aria-label="Main navigation">
+            <ul>
+              <li><a href="#cards">Teams</a></li>
+              <li><a href="#patterns">Patterns</a></li>
+              <li><a href="#resources">Resources</a></li>
+            </ul>
+          </nav>
+          <button class="navicon md-button md-button--icon" type="button" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false">
+            <span class="material-icons" aria-hidden="true">menu</span>
+          </button>
         </div>
-        <nav class="primary-nav" aria-label="Main navigation">
-          <ul>
-            <li><a href="#cards">Teams</a></li>
-            <li><a href="#patterns">Patterns</a></li>
-            <li><a href="#resources">Resources</a></li>
-          </ul>
-        </nav>
-        <button class="navicon md-button md-button--icon" type="button" aria-label="Open navigation" aria-expanded="false">
-          <span class="material-icons" aria-hidden="true">menu</span>
-        </button>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main class="w_content">
-    <div class="frame">
-      <section class="surface hero surface--primary" aria-labelledby="hero-title">
-        <div class="hero__badge">Material You</div>
-        <h1 id="hero-title">Material design UI trend demo</h1>
-        <p class="hero__lead">Explore expressive surfaces, user cards, and interaction patterns inspired by the latest Material Design guidance.</p>
-        <div class="hero__actions">
-          <button class="md-button md-button--filled" type="button">
-            <span class="material-icons" aria-hidden="true">rocket_launch</span>
-            Explore components
-          </button>
-          <button class="md-button md-button--tonal" type="button">
-            <span class="material-icons" aria-hidden="true">download</span>
-            Download kit
-          </button>
-        </div>
-        <ul class="hero__guides">
-          <li>
-            <span class="material-icons" aria-hidden="true">layers</span>
-            Layered surfaces with adaptive elevation
-          </li>
-          <li>
-            <span class="material-icons" aria-hidden="true">color_lens</span>
-            Dynamic color applied to avatar gradients
-          </li>
-          <li>
-            <span class="material-icons" aria-hidden="true">motion_photos_on</span>
-            Motion-ready components &amp; micro interactions
-          </li>
-        </ul>
-      </section>
+    <main class="w_content">
+      <div class="frame">
+        <section class="surface hero surface--primary" aria-labelledby="hero-title">
+          <div class="hero__content">
+            <div class="hero__badge">Material You</div>
+            <h1 id="hero-title">Material design UI trend demo</h1>
+            <p class="hero__lead">Explore expressive surfaces, user cards, and interaction patterns inspired by the latest Material Design guidance.</p>
+            <div class="hero__actions">
+              <button class="md-button md-button--filled" type="button">
+                <span class="material-icons" aria-hidden="true">rocket_launch</span>
+                Explore components
+              </button>
+              <button class="md-button md-button--tonal" type="button">
+                <span class="material-icons" aria-hidden="true">download</span>
+                Download kit
+              </button>
+            </div>
+            <ul class="hero__guides">
+              <li>
+                <span class="material-icons" aria-hidden="true">layers</span>
+                Layered surfaces with adaptive elevation
+              </li>
+              <li>
+                <span class="material-icons" aria-hidden="true">color_lens</span>
+                Dynamic color applied to avatar gradients
+              </li>
+              <li>
+                <span class="material-icons" aria-hidden="true">motion_photos_on</span>
+                Motion-ready components &amp; micro interactions
+              </li>
+            </ul>
+          </div>
+          <aside class="hero__media" aria-hidden="true">
+            <div class="hero-spotlight hero-spotlight--primary">
+              <span class="material-icons" aria-hidden="true">view_quilt</span>
+              <div>
+                <p class="hero-spotlight__title">Elevated surfaces</p>
+                <p class="hero-spotlight__meta">Elevation 1dp → 3dp</p>
+              </div>
+            </div>
+            <div class="hero-spotlight hero-spotlight--secondary">
+              <span class="material-icons" aria-hidden="true">touch_app</span>
+              <div>
+                <p class="hero-spotlight__title">Responsive states</p>
+                <p class="hero-spotlight__meta">Hover, press, focus</p>
+              </div>
+            </div>
+            <div class="hero-spotlight hero-spotlight--tertiary">
+              <span class="material-icons" aria-hidden="true">palette</span>
+              <div>
+                <p class="hero-spotlight__title">Dynamic color</p>
+                <p class="hero-spotlight__meta">Material You tokens</p>
+              </div>
+            </div>
+          </aside>
+        </section>
 
       <section class="chip-tray surface surface--raised" aria-labelledby="chip-title">
         <h2 id="chip-title" class="visually-hidden">Focus areas</h2>

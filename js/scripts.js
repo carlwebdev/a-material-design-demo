@@ -40,4 +40,17 @@ $(function () {
       .attr('aria-label', willOpen ? 'Close navigation' : 'Open navigation');
     $(this).find('.material-icons').text(willOpen ? 'close' : 'menu');
   });
+
+  $('.primary-nav a').on('click', function () {
+    const $nav = $('.primary-nav');
+    if ($nav.hasClass('is-open')) {
+      $nav.removeClass('is-open');
+      const $toggle = $('.navicon');
+      $toggle
+        .attr('aria-expanded', 'false')
+        .attr('aria-label', 'Open navigation')
+        .find('.material-icons')
+        .text('menu');
+    }
+  });
 });

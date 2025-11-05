@@ -19,7 +19,7 @@ body {
   max-width: 1200px;
   min-width: 320px;
   width: 100%;
-  padding: 0 var(--spacing-2);
+  padding: 0 clamp(24px, 6vw, 48px);
 }
 
 header {
@@ -71,7 +71,7 @@ header .inner {
 .primary-nav ul {
   display: flex;
   align-items: center;
-  gap: var(--spacing-0-5);
+  gap: var(--spacing-0-75);
   margin: 0;
   padding: 0;
 }
@@ -81,6 +81,7 @@ header .inner {
   border-radius: var(--radius-chip);
   color: var(--on-primary-color);
   font-weight: 500;
+  font-size: 0.95rem;
   transition: background var(--transition-base), color var(--transition-base);
 }
 
@@ -107,7 +108,7 @@ header .inner {
 main .frame {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-2);
+  gap: clamp(var(--spacing-1-5), 6vw, var(--spacing-3));
 }
 
 footer {
@@ -131,7 +132,7 @@ footer .inner {
 
 @media only screen and (max-width: 960px) {
   .frame {
-    padding: 0 var(--spacing-1);
+    padding: 0 clamp(20px, 6vw, 32px);
   }
 
   header .inner {
@@ -152,6 +153,7 @@ footer .inner {
     border-radius: 18px;
     box-shadow: var(--elevation-2);
     backdrop-filter: blur(16px);
+    width: min(280px, 80vw);
   }
 
   .primary-nav.is-open ul {
