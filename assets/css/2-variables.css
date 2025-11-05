@@ -21,9 +21,13 @@
   --surface-container-low: #f1f5ff;
   --surface-container: #ffffff;
   --surface-container-high: #e6eefc;
+  --surface-container-highest: #dbe6ff;
+  --surface-container-lowest: #fdfcff;
   --surface-variant: #d9e2f2;
   --primary-text: #111827;
   --secondary-text: #475569;
+  --on-surface: #1c1b1f;
+  --on-surface-variant: #49454f;
   --outline-color: #94a3b8;
   --outline-variant: #cbd5f5;
   --shadow-color: 13 20 33;
