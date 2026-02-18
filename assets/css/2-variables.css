@@ -4,12 +4,12 @@
 
 :root {
   /* Material 3 inspired color roles */
-  --dark-primary-color: #0b3d91;
-  --light-primary-color: #dbe8ff;
-  --primary-color: #1a73e8;
+  --dark-primary-color: #6750a4;
+  --light-primary-color: #f6edff;
+  --primary-color: #8c67d9;
   --on-primary-color: #ffffff;
-  --primary-container: #d6e4ff;
-  --on-primary-container: #012a63;
+  --primary-container: #eadcff;
+  --on-primary-container: #21005d;
   --secondary-color: #f97316;
   --on-secondary-color: #ffffff;
   --secondary-container: #ffe1d0;

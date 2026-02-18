@@ -29,9 +29,25 @@
               <li><a href="#resources">Resources</a></li>
             </ul>
           </nav>
-          <button class="navicon md-button md-button--icon" type="button" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false">
-            <span class="material-icons" aria-hidden="true">menu</span>
-          </button>
+          <div class="header-actions">
+            <button class="md-button md-button--icon header-search-toggle" type="button" aria-label="Open search" aria-controls="header-search" aria-haspopup="dialog" aria-expanded="false">
+              <span class="material-icons" aria-hidden="true">search</span>
+            </button>
+            <button class="navicon md-button md-button--icon" type="button" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false">
+              <span class="material-icons" aria-hidden="true">menu</span>
+            </button>
+          </div>
+          <div id="header-search" class="header-search-popover" popover>
+            <form class="header-search-form" role="search" action="#" method="get">
+              <label class="visually-hidden" for="header-search-input">Search demo content</label>
+              <input id="header-search-input" name="q" type="search" placeholder="Search components, patterns, resources" autocomplete="off" />
+              <button class="md-button md-button--filled" type="submit">
+                <span class="material-icons" aria-hidden="true">search</span>
+                Search
+              </button>
+              <button class="md-button md-button--text" type="button" popovertarget="header-search" popovertargetaction="hide">Close</button>
+            </form>
+          </div>
         </div>
       </div>
     </header>
@@ -416,6 +432,6 @@
   </footer>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="js/scripts.js"></script>
+<script src="assets/js/scripts.js"></script>
 </body>
 </html>
